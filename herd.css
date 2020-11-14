@@ -1,0 +1,78 @@
+body {
+    padding: 0;
+    margin: 5px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.button-area {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1em;
+}
+
+.hidden {
+    display: none;
+}
+#app {
+    margin: 1em auto;
+    width: 54em;
+    background-color: #fff;
+}
+#app>header {
+    width: 54em;
+    margin-left: -1em;
+    padding: 1em;
+    color: whitesmoke;
+    font-weight: 700;
+    background-color: #000;
+}
+#app>footer {
+    width: 54em;
+    min-height: 55px;
+    margin-left: -1em;
+    padding: 1em;
+    color: whitesmoke;
+    font-weight: 400;
+    background-color: #000;
+}
+#main {
+    margin: 1em 2em;
+}
+
+#patient-grid {
+    width: 50em;
+}
+
+#vac-but, #spread-but {
+    height: 100%;
+    vertical-align: middle;
+    font-weight: 700;
+    color: white;
+}
+
+
+.patient {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    padding: .5em;
+    display: inline-block;
+    margin: .25em;
+    width: 1em;
+    height: 1em;
+    background-color: lightskyblue;
+    border-radius: 50%;
+    -webkit-transition: all 2s;-moz-transition: all 2s;-ms-transition: all 2s;-o-transition: all 2s;transition: all 2s;
+}
+
+.immune, #vac-but {
+    background-color: limegreen;
+}
+
+.vulnerable {
+    background-color: lightskyblue;
+}
+
+.infected, #spread-but {
+    background-color: red;
+}

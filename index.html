@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>Talk To The Herd</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="herd.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="herd.js"></script>
+</head>
+<body>
+<div id="app">
+    <header>Talk To The Herd</header>
+    <div id="main">
+        <div id="outbreak-param">
+
+            <form class="pure-form pure-form-stacked">
+                <fieldset>
+                    <legend>Outbreak Parameters</legend>
+
+                    <div class="pure-g-r">
+                        <div class="pure-u-1-3">
+                            <label for="vac-rate">Vaccination Rate (%)</label>
+                            <input id="vac-rate" type="number" value="75">
+                        </div>
+
+                        <div class="pure-u-1-3">
+                            <label for="uptake">Uptake (%)</label>
+                            <input id="uptake" type="number" value="100">
+                        </div>
+
+                        <div class="pure-u-1-3">
+                            <label for="contagion">Contagion (%)</label>
+                            <input id="contagion" type="number" value="50">
+                        </div>
+                </fieldset>
+            </form>
+            <div class="pure-u-1 button-area">
+                <button id="vac-but" class="pure-button">Vaccinate!</button>
+                <button id="spread-but" class="pure-button hidden">Spread!</button>
+            </div>
+        </div>
+        <div id="patient-grid"></div>
+    </div>
+    <footer></footer>
+</div>
+
+<div id="patient-template" class="hidden">
+    <div class="patient fa fa-meh-o"></div>
+</div>
+</body>
+</html>
